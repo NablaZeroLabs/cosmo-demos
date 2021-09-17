@@ -1,0 +1,8 @@
+{
+    "version": "1.0",
+    "name"   : "Sun Synchronous Orbit Load Catalog",
+    "require": [
+			"spice.json",
+			"spacecraft.json"
+    ]
+}
