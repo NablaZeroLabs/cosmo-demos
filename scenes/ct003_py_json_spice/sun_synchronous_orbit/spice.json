@@ -1,0 +1,7 @@
+{
+   "version"      : "1.0",
+    "name"        : "Sun Synchronous Orbit SPICE Catalog",
+    "spiceKernels": [
+			"sso_j2.bsp"
+    ]
+}
