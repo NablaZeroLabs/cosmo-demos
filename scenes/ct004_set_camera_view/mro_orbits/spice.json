@@ -1,0 +1,8 @@
+{
+   "version"      : "1.0",
+    "name"        : "MRO Orbits SPICE Catalog",
+    "spiceKernels": [
+    		"mar097-sep-21.bsp",
+			"mro-sep-21.bsp"
+    ]
+}
