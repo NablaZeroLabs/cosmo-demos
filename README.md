@@ -25,8 +25,8 @@ This repository is accompanied by YouTube videos that explain how to run the exi
 This is done via the `export` command, which for convenience can be placed in a .bash_profile or .bashrc file. For example:
 
 ```sh
-$ export COSMOGRAPHIA=/Users/alfonso/cosmographia-4.0/Cosmographia.app/Contents/MacOS/Cosmographia
-$ export COSMO_DEMOS=/Users/alfonso/pub/cosmo-demos/scenes
+$ export COSMOGRAPHIA=${HOME}/cosmographia-4.0/Cosmographia.app/Contents/MacOS/Cosmographia
+$ export COSMO_DEMOS=${HOME}/cosmo-demos/scenes
 ```
 
 * [Video explaining how to set these environment variables](https://youtu.be/OU6bOjYOVus)
