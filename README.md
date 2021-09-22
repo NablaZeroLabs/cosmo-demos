@@ -77,3 +77,5 @@ This way, one can parse the Cosmographia URL without considering relative paths 
 ```sh
 $ parse_cosmo_url "[paste URL here inside of double quotes]"
 ```
+
+[Video with example of setting camera view and using URL parser](https://youtu.be/Lf2kb96J5uA)
