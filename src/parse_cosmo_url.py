@@ -7,8 +7,14 @@
 
 from sys import argv
 
-if __name__ == '__main__':
-	s     = argv[ 1 ].split( '&' )
+def parse_url( args ):
+	nargs = len( args )
+
+	if nargs != 2 or not args[ 1 ]:
+		raise RuntimeError(
+			f'Expected 1 commmand line argument, got {nargs}.' )
+
+	s     = args[ 1 ].split( '&' )
 	nvars = len( s )
 
 	if nvars == 11:
@@ -28,7 +34,8 @@ if __name__ == '__main__':
 		qy = s[ 8 ].replace( 'qy=', '' )
 		qz = s[ 9 ].replace( 'qz=', '' )
 	else:
-		raise RuntimeError( 'Invalid Cosmographia URL passed in.' )
+		raise RuntimeError(
+			f'Expected 11 or 12 variables in URL, got {nvars}.' )
 
 	line0 = f'cosmo.setCameraPosition( [ {x}, {y}, {z} ] )'
 	line1 = f'cosmo.setCameraOrientation( [ {qw}, {qx}, {qy}, {qz} ] )'
@@ -39,3 +46,6 @@ if __name__ == '__main__':
 	print( line0 )
 	print( line1 )
 	print()
+
+if __name__ == '__main__':
+	parse_url( argv )
