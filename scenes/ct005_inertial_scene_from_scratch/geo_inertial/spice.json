@@ -1,0 +1,7 @@
+{
+   "version"      : "1.0",
+    "name"        : "Geostationary Orbit SPICE Catalog",
+    "spiceKernels": [
+			"GEO.bsp"
+    ]
+}
