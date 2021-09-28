@@ -1,0 +1,8 @@
+{
+    "version": "1.0",
+    "name"   : "IAU_EARTH Orbits Load Catalog",
+    "require": [
+			"spice.json",
+			"spacecraft.json"
+    ]
+}
