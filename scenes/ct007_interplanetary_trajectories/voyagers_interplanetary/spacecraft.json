@@ -1,0 +1,48 @@
+{
+   "version": "1.0",
+   "name"   : "Voyagers Interplanetary Spacecraft Catalog",
+   "items"  : [
+      {
+         "class"     : "spacecraft",
+         "name"      : "Voyager 1",
+         "startTime" : "1977-09-01",
+         "center"    : "Sun",
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-31",
+            "center": "Sun"
+         },
+         "label": {
+            "color": [ 1, 0, 1 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 1, 0, 1 ],
+            "sampleCount": 500,
+            "duration"   : "30 y",
+            "lead"       : "0.1 h",
+            "fade"       : 1.0
+         }
+      },
+      {
+         "class"     : "spacecraft",
+         "name"      : "Voyager 2",
+         "startTime" : "1977-09-01",
+         "center"    : "Sun",
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-32",
+            "center": "Sun"
+         },
+         "label": {
+            "color": [ 0, 1, 1 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 0, 1, 1 ],
+            "sampleCount": 500,
+            "duration"   : "30 y",
+            "lead"       : "0.1 h",
+            "fade"       : 1.0
+         }
+      }
+   ]
+}

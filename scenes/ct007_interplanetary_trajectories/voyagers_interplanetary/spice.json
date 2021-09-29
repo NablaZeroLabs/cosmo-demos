@@ -1,0 +1,8 @@
+{
+   "version"      : "1.0",
+    "name"        : "Voyagers Interplanetary SPICE Catalog",
+    "spiceKernels": [
+			"Voyager_1.a54206u_V0.2_merged.bsp",
+			"Voyager_2.m05016u.merged.bsp"
+    ]
+}
