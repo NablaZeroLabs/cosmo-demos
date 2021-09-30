@@ -1,0 +1,9 @@
+{
+   "version"      : "1.0",
+    "name"        : "Orion NRHO SPICE Catalog",
+    "spiceKernels": [
+			"orion-nrho-june-2024.bsp",
+			"de432s-june-2024.bsp",
+			"../../../data/spice/fk/earth-moon-rotating-frame.tdf"
+    ]
+}

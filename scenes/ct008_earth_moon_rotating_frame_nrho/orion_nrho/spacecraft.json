@@ -1,0 +1,33 @@
+{
+   "version": "1.0",
+   "name"   : "Orion NRHO Spacecraft Catalog",
+   "items"  : [
+      {
+         "class"          : "spacecraft",
+         "name"           : "Orion",
+         "startTime"      : "2024-06-01 00:02:00 TDB",
+         "center"         : "Moon",
+         "trajectoryFrame": {
+            "type": "Spice",
+            "name": "EMRF"
+         },
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-60000",
+            "center": "Moon",
+            "frame" : "EMRF"
+         },
+         "label": {
+            "color": [ 1.0, 0.2, 1.0 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 1.0, 0.2, 1.0 ],
+            "lineWidth"  : 4,
+            "sampleCount": 200,
+            "duration"   : "30 d",
+            "lead"       : "1 s",
+            "fade"       : 1.0
+         }
+      }
+   ]
+}

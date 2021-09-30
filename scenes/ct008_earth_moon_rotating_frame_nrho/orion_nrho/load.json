@@ -1,0 +1,8 @@
+{
+    "version": "1.0",
+    "name"   : "Orion NRHO Load Catalog",
+    "require": [
+			"spice.json",
+			"spacecraft.json"
+    ]
+}
