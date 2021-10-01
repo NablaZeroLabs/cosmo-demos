@@ -1,0 +1,24 @@
+{
+   "version": "1.0",
+   "name"   : "Sun Synchronous Orbit Spacecraft Catalog",
+   "items"  : [
+      {
+         "class"     : "spacecraft",
+         "name"      : "SSO Spacecraft",
+         "startTime" : "2021-09-17 00:02:00 TDB",
+         "center"    : "Earth",
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-999",
+            "center": "Earth",
+            "frame" : "J2000"
+         },
+         "geometry": {
+            "type"        : "Mesh",
+            "meshRotation": [ 1, 0, 0, 0 ],
+            "size"        : 0.01,
+            "source"      : "../../../data/models/dawn/dawn.cmod"
+         }
+      }
+   ]
+}

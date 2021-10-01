@@ -1,0 +1,7 @@
+{
+   "version"      : "1.0",
+    "name"        : "GRAIL Toasters SPICE Catalog",
+    "spiceKernels": [
+			"grails-october-28.bsp"
+    ]
+}
