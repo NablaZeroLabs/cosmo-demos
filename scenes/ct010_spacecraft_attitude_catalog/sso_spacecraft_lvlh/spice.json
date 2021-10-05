@@ -1,0 +1,7 @@
+{
+   "version"      : "1.0",
+    "name"        : "SSO Spacecraft LVLH SPICE Catalog",
+    "spiceKernels": [
+			"sso_j2.bsp"
+    ]
+}
