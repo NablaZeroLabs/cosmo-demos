@@ -1,0 +1,7 @@
+{
+   "version"      : "1.0",
+    "name"        : "SSO Spacecraft Sun SPICE Catalog",
+    "spiceKernels": [
+			"sso_j2.bsp"
+    ]
+}
