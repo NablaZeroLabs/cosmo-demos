@@ -1,0 +1,221 @@
+{
+   "version": "1.0",
+   "name"   : "IAU_EARTH Orbits Spacecraft Catalog",
+   "items"  : [
+      {
+         "class"          : "spacecraft",
+         "name"           : "Geosynchronous",
+         "startTime"      : "2021-09-27 00:02:00 UTC",
+         "center"         : "Earth",
+         "trajectoryFrame": {
+            "type": "Spice",
+            "name": "IAU_EARTH"
+         },
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-999",
+            "center": "Earth",
+            "frame" : "IAU_EARTH"
+         },
+         "label": {
+            "color": [ 0.3, 1.0, 0.4 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 0.3, 1.0, 0.4 ],
+            "lineWidth"  : 4,
+            "sampleCount": 200,
+            "duration"   : "1 d",
+            "lead"       : "1 s",
+            "fade"       : 1.0
+         }
+      },
+      {
+         "class"          : "spacecraft",
+         "name"           : "Geosynchronous GT",
+         "startTime"      : "2021-09-27 00:02:00 UTC",
+         "center"         : "Earth",
+         "trajectoryFrame": {
+            "type": "Spice",
+            "name": "IAU_EARTH"
+         },
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-9990",
+            "center": "Earth",
+            "frame" : "IAU_EARTH"
+         },
+         "label": {
+            "color": [ 0.3, 1.0, 0.4 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 0.3, 1.0, 0.4 ],
+            "lineWidth"  : 4,
+            "sampleCount": 200,
+            "duration"   : "1 d",
+            "lead"       : "1 s",
+            "fade"       : 1.0
+         }
+      },
+      {
+         "class"          : "spacecraft",
+         "name"           : "Sun-Synchronous",
+         "startTime"      : "2021-09-27 00:02:00 UTC",
+         "center"         : "Earth",
+         "trajectoryFrame": {
+            "type": "Spice",
+            "name": "IAU_EARTH"
+         },
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-998",
+            "center": "Earth",
+            "frame" : "IAU_EARTH"
+         },
+         "label": {
+            "color": [ 1.0, 0.3, 1.0 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 1.0, 0.3, 1.0 ],
+            "lineWidth"  : 4,
+            "sampleCount": 200,
+            "duration"   : "0.5 d",
+            "lead"       : "1 s",
+            "fade"       : 1.0
+         }
+      },
+      {
+         "class"          : "spacecraft",
+         "name"           : "Sun-Synchronous GT",
+         "startTime"      : "2021-09-27 00:02:00 UTC",
+         "center"         : "Earth",
+         "trajectoryFrame": {
+            "type": "Spice",
+            "name": "IAU_EARTH"
+         },
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-9980",
+            "center": "Earth",
+            "frame" : "IAU_EARTH"
+         },
+         "label": {
+            "color": [ 1.0, 0.3, 1.0 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 1.0, 0.3, 1.0 ],
+            "lineWidth"  : 4,
+            "sampleCount": 200,
+            "duration"   : "0.5 d",
+            "lead"       : "1 s",
+            "fade"       : 1.0
+         }
+      },      {
+         "class"          : "spacecraft",
+         "name"           : "Geostationary",
+         "startTime"      : "2021-09-27 00:02:00 UTC",
+         "center"         : "Earth",
+         "trajectoryFrame": {
+            "type": "Spice",
+            "name": "IAU_EARTH"
+         },
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-997",
+            "center": "Earth",
+            "frame" : "IAU_EARTH"
+         },
+         "label": {
+            "color": [ 1.0, 0.4, 0.4 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 1.0, 0.4, 0.4 ],
+            "lineWidth"  : 4,
+            "sampleCount": 200,
+            "duration"   : "1 d",
+            "lead"       : "1 s",
+            "fade"       : 1.0
+         }
+      },
+      {
+         "class"          : "spacecraft",
+         "name"           : "Geostationary GT",
+         "startTime"      : "2021-09-27 00:02:00 UTC",
+         "center"         : "Earth",
+         "trajectoryFrame": {
+            "type": "Spice",
+            "name": "IAU_EARTH"
+         },
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-9970",
+            "center": "Earth",
+            "frame" : "IAU_EARTH"
+         },
+         "label": {
+            "color": [ 1.0, 0.4, 0.4 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 1.0, 0.4, 0.4 ],
+            "lineWidth"  : 4,
+            "sampleCount": 200,
+            "duration"   : "1 d",
+            "lead"       : "1 s",
+            "fade"       : 1.0
+         }
+      },
+      {
+         "class"          : "spacecraft",
+         "name"           : "Molniya",
+         "startTime"      : "2021-09-27 00:02:00 UTC",
+         "center"         : "Earth",
+         "trajectoryFrame": {
+            "type": "Spice",
+            "name": "IAU_EARTH"
+         },
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-996",
+            "center": "Earth",
+            "frame" : "IAU_EARTH"
+         },
+         "label": {
+            "color": [ 0.2, 1.0, 1.0 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 0.2, 1.0, 1.0 ],
+            "lineWidth"  : 4,
+            "sampleCount": 200,
+            "duration"   : "2 d",
+            "lead"       : "1 s",
+            "fade"       : 1.0
+         }
+      },
+      {
+         "class"          : "spacecraft",
+         "name"           : "Molniya GT",
+         "startTime"      : "2021-09-27 00:02:00 UTC",
+         "center"         : "Earth",
+         "trajectoryFrame": {
+            "type": "Spice",
+            "name": "IAU_EARTH"
+         },
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-9960",
+            "center": "Earth",
+            "frame" : "IAU_EARTH"
+         },
+         "label": {
+            "color": [ 0.2, 1.0, 1.0 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 0.2, 1.0, 1.0 ],
+            "lineWidth"  : 4,
+            "sampleCount": 600,
+            "duration"   : "2 d",
+            "lead"       : "1 s",
+            "fade"       : 1.0
+         }
+      }
+   ]
+}

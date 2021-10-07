@@ -1,0 +1,7 @@
+{
+   "version"      : "1.0",
+    "name"        : "IAU_EARTH Orbits SPICE Catalog",
+    "spiceKernels": [
+    		"ct006-orbits.bsp"
+    ]
+}
