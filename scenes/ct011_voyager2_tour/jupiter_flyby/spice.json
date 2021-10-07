@@ -1,0 +1,8 @@
+{
+   "version"      : "1.0",
+    "name"        : "Voyager 2 Jupiter Flyby SPICE Catalog",
+    "spiceKernels": [
+			"../Voyager_2.m05016u.merged.bsp",
+			"../../../data/spice/spk/jup310.bsp"
+    ]
+}

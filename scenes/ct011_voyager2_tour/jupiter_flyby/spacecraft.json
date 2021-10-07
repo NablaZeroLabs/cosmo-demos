@@ -1,0 +1,38 @@
+{
+   "version": "1.0",
+   "name"   : "Voyager 2 Jupiter Flyby Spacecraft Catalog",
+   "items"  : [
+      {
+         "class"     : "spacecraft",
+         "name"      : "Voyager 2",
+         "startTime" : "1979-05-25",
+         "center"    : "Jupiter",
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-32",
+            "center": "Jupiter"
+         },
+         "geometry": {
+            "type"        : "Mesh",
+            "meshRotation": [ 0, 0, -0.7071, 0.7071 ],
+            "size"        : 0.01,
+            "source"      : "../../../data/models/cassini/Cassini_no_Huygens_03.3ds"
+         },
+         "bodyFrame": {
+            "type"       : "TwoVector",
+            "primaryAxis": "-z",
+            "primary"    : {
+               "type"    : "RelativePosition",
+               "observer": "Voyager 2",
+               "target"  : "Earth"
+            },
+            "secondaryAxis": "x",
+            "secondary"    : {
+               "type"     : "ConstantVector",
+               "direction": [ 0, 1, 0 ],
+               "frame"    : { "type": "Spice", "name": "J2000" }
+            }
+         }
+      }
+   ]
+}
