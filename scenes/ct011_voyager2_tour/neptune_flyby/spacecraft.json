@@ -1,0 +1,28 @@
+{
+   "version": "1.0",
+   "name"   : "Voyager 2 Neptune Flyby Spacecraft Catalog",
+   "items"  : [
+      {
+         "class"     : "spacecraft",
+         "name"      : "Voyager 2",
+         "startTime" : "1989-07-01",
+         "center"    : "Neptune",
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-32",
+            "center": "Neptune"
+         },
+         "label": {
+            "color": [ 1.0, 0.3, 1.0 ]
+         },
+         "trajectoryPlot": {
+            "color"      : [ 1.0, 0.3, 1.0 ],
+            "lineWidth"  : 4,
+            "sampleCount": 200,
+            "duration"   : "5 y",
+            "lead"       : "1 s",
+            "fade"       : 1.0
+         }
+      }
+   ]
+}
