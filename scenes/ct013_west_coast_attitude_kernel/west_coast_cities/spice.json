@@ -6,6 +6,6 @@
 			"kernels/cities.bsp",
 			"kernels/sc-attitude.bc",
 			"kernels/sc-sclk.tsc",
-			"kernels/fsc-frame.tf"
+			"kernels/sc-frame.tf"
     ]
 }
