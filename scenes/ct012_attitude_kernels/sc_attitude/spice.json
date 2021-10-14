@@ -1,0 +1,10 @@
+{
+   "version"      : "1.0",
+    "name"        : "SC Attitude SPICE Catalog",
+    "spiceKernels": [
+			"kernels/SC.bsp",
+			"kernels/sc-frame.tf",
+			"kernels/sc-orientation.bc",
+			"kernels/sc-sclk.tsc"
+    ]
+}

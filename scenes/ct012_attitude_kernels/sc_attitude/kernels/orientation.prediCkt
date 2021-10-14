@@ -1,0 +1,45 @@
+\begintext
+
+Input script to the SPICE utility prediCkt for the example SSO
+spacecraft in Cosmographia Tutorials video 12.
+
+\begindata
+ 
+CK-SCLK          = 999
+CK-SPK           = -999
+ 
+DIRECTION_SPECS += ( 'SCToEarth     = POSITION OF EARTH -' )
+DIRECTION_SPECS += (              'FROM -999        -' )
+DIRECTION_SPECS += (              'CORRECTION NONE'    )
+ 
+DIRECTION_SPECS += ( 'SCToSun     = POSITION OF SUN -' )
+DIRECTION_SPECS += (              'FROM -999         -' )
+DIRECTION_SPECS += (              'CORRECTION NONE'    )
+ 
+ORIENTATION_NAME += 'InstrumenttoEarth'
+PRIMARY          += '+X = SCToEarth'
+SECONDARY        += '+Z = SCToSun'
+BASE_FRAME       += 'J2000'
+
+ORIENTATION_NAME += 'SolarPanelstoSun'
+PRIMARY          += '+Z = SCToSun'
+SECONDARY        += '+X = SCToEarth'
+BASE_FRAME       += 'J2000'
+
+CK-FRAMES += -999000
+ 
+ORIENTATION_NAME += 'Instrumen
+ATION  += 'SolarPanelstoSun'
+CK-999000START        += @2021-AUG-05-01:00:00.000
+CK-999000STOP         += @2021-AUG-05-01:50:00.000
+ 
+CK-999000ORIENTATION  += 'SOLUTION TO SC_BODY_FRAME = InstrumenttoEarth'
+CK-999000START        += @2021-AUG-05-01:55:00.000
+CK-999000STOP         += @2021-AUG-05-02:05:00.000
+ 
+CK-999000ORIENTATION  += 'SOLUTION TO SC_BODY_FRAME = SolarPanelstoSun'
+CK-999000START        += @2021-AUG-05-02:10:00.000
+CK-999000STOP         += @2021-AUG-05-03:00:00.000
+
+ 
+\begintext

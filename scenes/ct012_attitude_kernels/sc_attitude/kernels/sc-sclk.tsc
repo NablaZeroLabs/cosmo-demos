@@ -1,0 +1,96 @@
+ 
+TEST SPICE SCLK Kernel
+--------------------------------------------------------
+ 
+This file contains the data necessary for converting from ET to
+ticks for the fictional spacecraft clock having id code 999.  It is
+produced by the utility program prediCkt.
+ 
+This SCLK kernel is intended to be used with the test CK file with
+structure IDs listed below on board the spacecraft -999.
+ 
+This fictional clock begins at 2021-AUG-04-01:00:00.000 ET and continues
+for 1 billion seconds.  The clock has a granularity of 0.1
+milliseconds.
+ 
+This is intended for study purposes or for those situations in
+which a clock is not available for the structure whose orientation
+will be modelled by a C-kernel.
+ 
+If you have any questions about this file that these comments don't
+answer, contact Bill Taber at NAIF.
+ 
+(818) 354-4279
+btaber@spice.jpl.nasa.gov
+ 
+ 
+ 
+Implementation notes
+--------------------------------------------------------
+ 
+This SCLK file is constructed so that the valid SCLK strings
+are simply the number of TDB seconds that have passed
+since the Ephemeris epoch 2021-AUG-04-01:00:00.000.
+Thus 1/ 288929292.8201  simply represents the epoch that occurs
+288929292.8201 TDB seconds past the ET epoch 2021-AUG-04-01:00:00.000.
+ 
+ 
+For all time, the clock runs at the same rate as TDB. There is only
+one partition for this clock.
+ 
+You must load this file into the kernel pool before using any of the
+SPICELIB SCLK routines. The code fragment
+ 
+CALL FURNSH ( < name of this file > )
+ 
+performs this task. To convert between ET and UTC, you will also need
+to load a leapseconds kernel. The additional call to FURNSH,
+ 
+CALL FURNSH ( < name of your leapsecond file > )
+ 
+will accomplish this. Note that you must supply the actual names of
+the files used on your system as arguments to FURNSH. Because the file
+names are system dependent, we do not list them here.
+ 
+For more information, consult your SPICELIB required reading files.
+The following areas are covered:
+ 
+SCLK system                     SCLK required reading
+Time systems and conversion     TIME required reading
+Kernel pool                     KERNEL required reading
+ 
+ 
+Kernel data
+--------------------------------------------------------
+ 
+ 
+\begindata
+ 
+ 
+SCLK_KERNEL_ID             = ( @28-OCT-1994        )
+ 
+SCLK_DATA_TYPE_999           = ( 1 )
+ 
+SCLK01_TIME_SYSTEM_999       = ( 1 )
+SCLK01_N_FIELDS_999          = ( 2 )
+SCLK01_MODULI_999            = ( 1000000000     10000 )
+SCLK01_OFFSETS_999           = ( 0         0 )
+SCLK01_OUTPUT_DELIM_999      = ( 1 )
+ 
+SCLK_PARTITION_START_999     = ( 0.0000000000000E+00 )
+SCLK_PARTITION_END_999       = ( 1.00000000E+14      )
+SCLK01_COEFFICIENTS_999      = ( 0.00000000E+00
+                               @2021-AUG-04-01:00:00.000
+                               1  )
+ 
+ 
+DELTET/DELTA_T_A    =   32.184
+DELTET/K            =    1.657D-3
+DELTET/EB           =    1.671D-2
+DELTET/M            = (  6.239996D0 1.99096871D-7 )
+ 
+CK_-999000_SCLK       =   -999
+CK_-999000_SPK        =   -999
+ 
+\begintext
+ 
