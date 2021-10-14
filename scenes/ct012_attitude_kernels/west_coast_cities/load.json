@@ -1,0 +1,9 @@
+{
+    "version": "1.0",
+    "name"   : "West Coast Cities Load Catalog",
+    "require": [
+			"spice.json",
+			"spacecraft.json",
+			"cities.json"
+    ]
+}

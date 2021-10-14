@@ -1,0 +1,11 @@
+{
+   "version"      : "1.0",
+    "name"        : "West Coast Cities SPICE Catalog",
+    "spiceKernels": [
+			"kernels/sso_la_sf_sea.bsp",
+			"kernels/cities.bsp",
+			"kernels/sc-attitude.bc",
+			"kernels/sc-sclk.tsc",
+			"kernels/fsc-frame.tf"
+    ]
+}

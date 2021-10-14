@@ -1,0 +1,28 @@
+{
+   "version": "1.0",
+   "name"   : "SSO Attitude Spacecraft Catalog",
+   "items"  : [
+      {
+         "class"     : "spacecraft",
+         "name"      : "SC",
+         "startTime" : "2021-10-11 00:01:10",
+         "center"    : "Earth", 
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "-999",
+            "center": "Earth",
+            "frame" : "J2000"
+         },
+         "bodyFrame": {
+            "type": "Spice",
+            "name": "SC_BODY_FRAME"
+         },
+         "geometry": {
+            "type"        : "Mesh",
+            "size"        : 0.01,
+            "meshRotation": [ 0, 0.7071, 0, 0.7071 ],
+            "source"      : "../../../data/models/dawn/dawn.cmod"
+         }
+      }
+   ]
+}

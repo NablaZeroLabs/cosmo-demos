@@ -1,0 +1,51 @@
+{
+   "version": "1.0",
+   "name"   : "West Coast Cities Catalog",
+   "items"  : [
+      {
+         "class"     : "spacecraft",
+         "name"      : "Los Angeles",
+         "startTime" : "2021-10-11 00:01:10",
+         "center"    : "Earth", 
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "30000",
+            "center": "Earth",
+            "frame" : "J2000"
+         },
+         "label": {
+            "color": [ 0.7, 0.3, 1.0 ]
+         }
+      },
+      {
+         "class"     : "spacecraft",
+         "name"      : "San Francisco",
+         "startTime" : "2021-10-11 00:01:10",
+         "center"    : "Earth", 
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "30001",
+            "center": "Earth",
+            "frame" : "J2000"
+         },
+         "label": {
+            "color": [ 1.0, 0.7, 0.2 ]
+         }
+      },
+      {
+         "class"     : "spacecraft",
+         "name"      : "Seattle",
+         "startTime" : "2021-10-11 00:01:10",
+         "center"    : "Earth", 
+         "trajectory": {
+            "type"  : "Spice",
+            "target": "30002",
+            "center": "Earth",
+            "frame" : "J2000"
+         },
+         "label": {
+            "color": [ 0.3, 1.0, 0.3 ]
+         }
+      }
+   ]
+}
